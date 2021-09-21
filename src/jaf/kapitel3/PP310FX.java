@@ -33,11 +33,11 @@ public class PP310FX extends Application{
     Line mouth = new Line(70,80,90,80);
 
     Circle topButton = new Circle(80,110,6);
-    topButton.setFill(Color.RED);
+    topButton.setFill(Color.BLUE);
     Circle middleButton = new Circle(80,130,6);
-    middleButton.setFill(Color.RED);
+    middleButton.setFill(Color.GOLD);
     Circle bottomButton = new Circle(80,150,6);
-    bottomButton.setFill(Color.RED);
+    bottomButton.setFill(Color.BLACK);
 
 
     Line leftArm = new Line(110, 130, 160, 130);
