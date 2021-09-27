@@ -1,11 +1,17 @@
 package jaf.kapitel4.pp46;
 
+// *******************************************************************************************************
+//  kapitel4.PP46.java           Author:Devin/Hasler
+//  Creat the class BoxTest to make it possible to creat boxes including height, width, depth and fullness
+// ********************************************************************************************************
+
+
 public class BoxTest {
     public static void main(String[] args){
         Box box1 = new Box();
         Box box2 = new Box();
 
-        box1.setHeight(5);
+        box1.setHeight(5);                              //set height, depth and width
         box1.setDepth(5);
         box1.setWidth(5);
 

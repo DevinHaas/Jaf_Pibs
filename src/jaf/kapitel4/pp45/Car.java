@@ -2,7 +2,7 @@ package jaf.kapitel4.pp45;
 
 // *************************************************************************************
 //  kapitel4.PP45.java           Author:Devin/Hasler
-//  Creat the class Car to make it possible to creat cars concluding make, model and year
+//  Creat the class Car to make it possible to creat cars including make, model and year
 // *************************************************************************************
 
 public class Car {

@@ -1,23 +1,26 @@
 package jaf.kapitel4.pp47;
 
-import java.util.Date;
+// **********************************************************************************************************
+//  kapitel4.PP47.java           Author:Devin/Hasler
+//  Creat the class Book to make it possible to creat books including author, date, publisher and title
+// **********************************************************************************************************
 
-public class Book {
+public class Book {                                     //instantiate the important variables
     private String title;
     private String publisher;
     private String author;
-    private Date copyrightDate;
+    private String copyrightDate;
 
     public Book(){
         this.author = "";
-        this.copyrightDate = new Date(0000, 00, 00);
+        this.copyrightDate = "0000, 00, 00";
         this.publisher= "";
         this.title = "";
     }
 
     public void setAuthor(String author) {
         this.author = author;
-    }
+    }           //creat setter and getter methods
 
     public String getAuthor() {
         return author;
@@ -39,21 +42,20 @@ public class Book {
         return title;
     }
 
-    public void setCopyrightDate(Date copyrightDate) {
+    public void setCopyrightDate(String copyrightDate) {
         this.copyrightDate = copyrightDate;
     }
 
-    public Date getCopyrightDate() {
+    public String getCopyrightDate() {
         return copyrightDate;
     }
 
     @Override
-    public String toString() {
-        return "Book{" +
-                "title='" + title + '\'' +
-                ", publisher='" + publisher + '\'' +
-                ", author='" + author + '\'' +
-                ", copyrightDate=" + copyrightDate +
-                '}';
+    public String toString() {                                  //creat a multiline description with "\n"
+        return
+                " title = " + title+ "\n"+
+                ", publisher = " + publisher+ "\n"+
+                ", author = " + author+ "\n"+
+                ", copyrightDate = " + copyrightDate;
     }
 }
