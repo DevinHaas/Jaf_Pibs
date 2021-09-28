@@ -11,10 +11,10 @@ public class Car {
     private int year;
     final int thisYear = 2021;
 
-    public Car(){
-        this.make = "";
-        this.model = "";
-        this.year = 0;
+    public Car(String make, String model, int year){
+        this.make = make;
+        this.model = model;
+        this.year = year;
     }
 
     public void setMake(String make){

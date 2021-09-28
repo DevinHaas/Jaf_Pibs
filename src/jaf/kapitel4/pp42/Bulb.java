@@ -3,8 +3,8 @@ package jaf.kapitel4.pp42;
 public class Bulb {
     private boolean light;
 
-    public Bulb(){
-        this.light = false;
+    public Bulb(boolean light){
+        this.light = light;
     }
 
     public void setLight(boolean light) {

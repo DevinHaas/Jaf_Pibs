@@ -11,10 +11,10 @@ public class Box {
     private int depth;
     private boolean full;
 
-    public Box(){
-        this.height = 0;
-        this.width = 0;
-        this.depth = 0;
+    public Box(int height, int width, int depth){
+        this.height = height;
+        this.width = width;
+        this.depth = depth;
         this.full = false;
     }
 

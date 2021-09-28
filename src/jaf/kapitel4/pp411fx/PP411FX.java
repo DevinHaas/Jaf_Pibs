@@ -20,7 +20,7 @@ public class PP411FX extends Application {
 
         GridPane pane = new GridPane();                 //creat a new Grid pane
 
-        Image img = new Image("https://1.bp.blogspot.com/-9kgpBaSdrZo/XFYDSXr4LRI/AAAAAAAAB7A/2_MlzFeLTsQ1NOjPEp0rITwLpSyznV38ACKgBGAs/w0/lion-20-4K.jpg");
+        Image img = new Image("lion.jpg");
 
         ImageView imgViewLeftTop = new ImageView(img);          //great 4 new Image Views of the lion
         ImageView imgViewRightTop = new ImageView(img);
@@ -28,10 +28,15 @@ public class PP411FX extends Application {
         ImageView imgViewLeftBottom = new ImageView(img);
 
 
-        imgViewLeftTop.setViewport(new Rectangle2D(1200,600,300,300));              //give them a view port
-        imgViewRightTop.setViewport(new Rectangle2D(1500, 600, 300, 300));
-        imgViewLeftBottom.setViewport(new Rectangle2D(1200, 900, 300, 300 ));
-        imgViewRightBottom.setViewport(new Rectangle2D(1500, 900, 300, 300));
+        imgViewLeftTop.setViewport(new Rectangle2D(1200,600,400,400));              //give them a view port
+        imgViewRightTop.setViewport(new Rectangle2D(1600, 600, 400, 400));
+        imgViewLeftBottom.setViewport(new Rectangle2D(1200, 1000, 400, 400 ));
+        imgViewRightBottom.setViewport(new Rectangle2D(1600, 1000, 400, 400));
+
+
+        //rotate the Viewports
+        //imgViewRightBottom.setRotate(90);
+        //imgViewLeftBottom.setRotate(90);
 
 
         GridPane.setHalignment(imgViewLeftTop, HPos.LEFT);
@@ -39,7 +44,7 @@ public class PP411FX extends Application {
 
         pane.setStyle("-fx-background-color: black");                       //set the background to black
 
-        Scene scene = new Scene(pane, 700, 700);
+        Scene scene = new Scene(pane, 800, 800);
 
         pane.add(imgViewLeftTop, 0,0);                  //give the imgViews a place in the gride
         pane.add(imgViewRightTop, 1, 0);

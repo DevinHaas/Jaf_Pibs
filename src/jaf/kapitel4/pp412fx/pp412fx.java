@@ -27,7 +27,7 @@ public class pp412fx extends Application {
         Button button = new Button(" Push ");               //creat a new button
         button.setFont(font);
 
-        numberText = new Text("Number");
+        numberText = new Text("Number: ");
         numberText.setFont(font);
 
         button.setOnAction(this::processButtonPress);
@@ -44,7 +44,6 @@ public class pp412fx extends Application {
         primaryStage.show();
     }
     public void processButtonPress(ActionEvent event){                      //creat an action event if button is pressed
-        numberText.setText(String.valueOf(generator.nextInt(100)));
-
+        numberText.setText("Number: "+ (generator.nextInt(100) + 1));
     }
 }

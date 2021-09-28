@@ -8,23 +8,21 @@ package jaf.kapitel4.pp47;
 
 public class Bookshelf {
     public static void main(String[] args){
-        Book book1 = new Book();
-        Book book2 = new Book();
+        Book habits = new Book("7 Habits of Highly effective People",             //set the variables of habits
+                "Hachete Book Group USA",
+                "Stephen Covey",
+                "1989 08 15");
+        Book money = new Book("Money",                      //set the variables of money
+                "FBV",
+                "Tony Robbins",
+                "2014 11 18");
 
-        book1.setAuthor("Stephen Covey");                           //set the variables of book1
-        book1.setCopyrightDate("1989 08 15");
-        book1.setPublisher("Hachete Book Group USA");
-        book1.setTitle("7 Habits of Highly effective People");
-        System.out.println();
+        System.out.println(habits.getCopyrightDate());
+        System.out.println(money.getTitle());
+        System.out.println(money.getPublisher());
 
-        book2.setAuthor("Tony Robbins");                //set the variables of book2
-        book2.setCopyrightDate("2014 11 18");
-        book2.setTitle("Money");
-        book2.setPublisher("FBV");
-
-        System.out.println(book1.getCopyrightDate());
-        System.out.println(book2.getTitle());
-        System.out.println(book2.getPublisher());
+        System.out.println(habits);
+        System.out.println(money);
 
 
 

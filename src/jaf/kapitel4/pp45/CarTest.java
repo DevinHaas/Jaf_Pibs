@@ -7,19 +7,15 @@ package jaf.kapitel4.pp45;
 
 public class CarTest {
     public static void main(String[] args){
-        Car car1 = new Car();
-        Car car2 = new Car();
+        Car car1 = new Car("Audi","R8",2012);       ////creat a Audi Car and set the year and the model
+        Car car2 = new Car("Rolls-Royce", "Corniche", 1971);
 
-        car1.setYear(2022);                         //creat a Hyundai Car and set the year and the model
-        car1.setMake("Hyundai");
-        car1.setModel("Elantra Hybrid");
-
-        car2.setYear(1971);
-        car2.setMake("Rolls-Royce");
-        car2.setModel("Corniche");
 
         System.out.println(car1);               //access the method toString and print a one-line description
         System.out.println(car2);
+
+        System.out.println(car1.getMake());
+
 
 
     }

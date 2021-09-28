@@ -8,10 +8,10 @@ package jaf.kapitel4.pp46;
 
 public class BoxTest {
     public static void main(String[] args){
-        Box box1 = new Box();
-        Box box2 = new Box();
+        Box box1 = new Box(5,5,5);          //set height, depth and width
+        Box box2 = new Box(4,3,6);
 
-        box1.setHeight(5);                              //set height, depth and width
+        box1.setHeight(5);
         box1.setDepth(5);
         box1.setWidth(5);
 

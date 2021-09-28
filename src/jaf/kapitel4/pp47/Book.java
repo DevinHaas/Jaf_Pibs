@@ -11,11 +11,11 @@ public class Book {                                     //instantiate the import
     private String author;
     private String copyrightDate;
 
-    public Book(){
-        this.author = "";
-        this.copyrightDate = "0000, 00, 00";
-        this.publisher= "";
-        this.title = "";
+    public Book(String title, String publisher, String author, String copyrightDate){
+        this.author = author;
+        this.copyrightDate = copyrightDate;
+        this.publisher= publisher;
+        this.title = title;
     }
 
     public void setAuthor(String author) {
