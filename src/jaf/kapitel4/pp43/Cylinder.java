@@ -1,5 +1,10 @@
 package jaf.kapitel4.pp43;
 
+// **********************************************************************************************************
+//  kapitel4.PP43.java           Author:Devin/Hasler
+//  Creat a class for building cylinders with radius and height
+// **********************************************************************************************************
+
 import java.text.DecimalFormat;
 
 public class Cylinder {
@@ -8,9 +13,9 @@ public class Cylinder {
 
     DecimalFormat fmt = new DecimalFormat("0.###");
 
-    public Cylinder() {
-        this.radius = 0;
-        this.height = 0;
+    public Cylinder(double radius, double height) {
+        this.radius = radius;
+        this.height = height;
     }
 
     public double getHeight() {

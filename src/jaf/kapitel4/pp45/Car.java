@@ -2,7 +2,7 @@ package jaf.kapitel4.pp45;
 
 // *************************************************************************************
 //  kapitel4.PP45.java           Author:Devin/Hasler
-//  Creat the class Car to make it possible to creat cars concluding make, model and year
+//  Creat the class Car to make it possible to creat cars including make, model and year
 // *************************************************************************************
 
 public class Car {
@@ -11,10 +11,10 @@ public class Car {
     private int year;
     final int thisYear = 2021;
 
-    public Car(){
-        this.make = "";
-        this.model = "";
-        this.year = 0;
+    public Car(String make, String model, int year){
+        this.make = make;
+        this.model = model;
+        this.year = year;
     }
 
     public void setMake(String make){
