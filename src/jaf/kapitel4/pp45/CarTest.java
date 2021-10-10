@@ -15,6 +15,7 @@ public class CarTest {
         System.out.println(car2);
 
         System.out.println(car1.getMake());
+        System.out.println(car1.isAntique());
 
 
 

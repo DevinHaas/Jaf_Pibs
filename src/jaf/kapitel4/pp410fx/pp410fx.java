@@ -22,15 +22,22 @@ public class pp410fx extends Application {
     Image img2 = new Image("amongus.png");
     Image img3 = new Image("amongus.png");
 
+
+    ImageView imageView1 = new ImageView(img1);
+    ImageView imageView2 = new ImageView(img2);
+
+    ImageView imageView3 = new ImageView(img3);
+    FlowPane pane = new FlowPane(imageView1, imageView2, imageView3);
+
     @Override
     public void start(Stage primaryStage) {
 
 
+        imageView2.setOnMouseEntered(this::mouseEntered);
 
-        ImageView imageView1 = new ImageView(img1);
-        ImageView imageView2 = new ImageView(img2);
-        imageView2.setOnMouseEntered(this::mouseOver);
-        ImageView imageView3 = new ImageView(img3);
+
+
+
 
 
         imageView1.setFitHeight(300);
@@ -40,7 +47,7 @@ public class pp410fx extends Application {
         imageView1.setPreserveRatio(true);
         imageView2.setPreserveRatio(true);
         imageView3.setPreserveRatio(true);
-        FlowPane pane = new FlowPane(imageView1, imageView2, imageView3);
+
         pane.setHgap(20);
         pane.setAlignment(Pos.CENTER);
 
@@ -54,9 +61,12 @@ public class pp410fx extends Application {
 
     }
 
-    private void mouseOver(MouseEvent event) {
+    private void mouseEntered(MouseEvent event) {
+        img2 = new Image ("impostor.png");
         System.out.println("hallo");
-        img2 = new Image("impostor.png");
+
+
+
     }
 
 

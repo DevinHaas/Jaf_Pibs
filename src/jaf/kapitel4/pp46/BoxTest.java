@@ -19,7 +19,7 @@ public class BoxTest {
         System.out.println(box1.getWidth());
         System.out.println(box2.isFull());
 
-        System.out.println(box1.toString());
+        System.out.println(box1);
 
         box2.setFull(true);
         System.out.println(box2.isFull());

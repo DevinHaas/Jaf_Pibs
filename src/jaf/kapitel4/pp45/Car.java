@@ -38,6 +38,7 @@ public class Car {
     public int getYear() {
         return year;
     }
+
     public boolean isAntique(){
         int age = this.thisYear - this.year;
         return age > 45;
