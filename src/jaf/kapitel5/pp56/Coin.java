@@ -21,7 +21,7 @@ public class Coin {
         return (face==TAILS);
     }
 
-    @Override
+
     public String toString() {
         if (face==TAILS)
             return "Tail";
