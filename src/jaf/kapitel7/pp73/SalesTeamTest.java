@@ -3,7 +3,7 @@ package jaf.kapitel7.pp73;
 import jaf.kapitel7.pp72.SalesPerson;
 
 public class SalesTeamTest {
-  public static void main(String[] args){
+  public static void main(String[] args) {
 
     SalesTeam team1 = new SalesTeam("Peaky Blinders");
     SalesTeam team2 = new SalesTeam("The Conservatives");
@@ -26,11 +26,8 @@ public class SalesTeamTest {
     team2.addSalesPerson(person3);
     team2.addSalesPerson(person4);
 
+    //show the weekly reports for both teams
     team1.weeklyReport();
     team2.weeklyReport();
-
-
-
   }
-
 }

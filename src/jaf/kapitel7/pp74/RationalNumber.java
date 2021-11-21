@@ -26,17 +26,18 @@ public class RationalNumber implements Comparable {
     return denominator;
   }
 
+  //creat a method for comparing the numerator and denominator using a tolerance
   public void comparable(RationalNumber rat2) {
     double tolerance = 0.0001;
     int numerator2 = rat2.getNumerator();
     int denominator2 = rat2.getDenominator();
 
-    float number2 = (float) numerator2 / (float) denominator2;
-    float number1 = (float) numerator / (float) denominator;
+    double number2 = (double) numerator2 / (double) denominator2;
+    double number1 = (double) numerator / (double) denominator;
 
     if (Math.abs(number1 - number2) < tolerance) {
       System.out.println("They are equal");
-    }else{
+    } else {
       System.out.println("They are not equal !!");
     }
   }

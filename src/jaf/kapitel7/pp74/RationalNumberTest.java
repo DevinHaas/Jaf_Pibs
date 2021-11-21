@@ -8,6 +8,7 @@ public class RationalNumberTest {
     System.out.println(rat1.getNumerator());
     System.out.println(rat1.getDenominator());
 
+    //compare the two numbers
     rat1.comparable(new RationalNumber(4,6));
 
 

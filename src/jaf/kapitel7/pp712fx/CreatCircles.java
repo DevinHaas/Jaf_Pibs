@@ -1,5 +1,6 @@
 package jaf.kapitel7.pp712fx;
 
+import java.util.Random;
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
@@ -15,9 +16,10 @@ public class CreatCircles extends Application {
 
   private Circle currentCircle;
   private Group root;
+  Random ran = new Random();
 
   @Override
-  //creat a primary Stage with the two Mouse Event Handlers processMousePressed/processMouseDrag
+  // creat a primary Stage with the two Mouse Event Handlers processMousePressed/processMouseDrag
   public void start(Stage primaryStage) {
     root = new Group();
 
@@ -31,7 +33,7 @@ public class CreatCircles extends Application {
     primaryStage.show();
   }
 
-  //creat a method for setting the radius
+  // creat a method for setting the radius
   private void processMouseDrag(javafx.scene.input.MouseEvent mouseEvent) {
     double radius =
         Math.sqrt(
@@ -39,17 +41,16 @@ public class CreatCircles extends Application {
                 + Math.pow(mouseEvent.getY() - currentCircle.getCenterY(), 2));
 
     currentCircle.setRadius(radius);
-
   }
 
-  //creat a method for setting the center of the new circle
+  // creat a method for setting the center of the new circle
   private void processMousePressed(javafx.scene.input.MouseEvent mouseEvent) {
+
     double clickX = mouseEvent.getX();
     double clickY = mouseEvent.getY();
 
     currentCircle = new Circle(clickX, clickY, 2);
+    currentCircle.setFill(Color.rgb(ran.nextInt(255), ran.nextInt(255), ran.nextInt(255)));
     root.getChildren().addAll(currentCircle);
-
-
   }
 }

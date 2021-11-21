@@ -33,7 +33,7 @@ public class CreatCircles extends Application {
         System.out.println(xDiv);
         System.out.println(yDiv);
 
-        double distance = (Math.pow(xDiv, 2)) + (Math.pow(yDiv, 2));
+        double distance = Math.sqrt(Math.pow(xDiv, 2)) + (Math.pow(yDiv, 2));
         System.out.println(distance);
         double sumRad = circles[i].getRadius() + circles[i - 1].getRadius();
         System.out.println(sumRad);

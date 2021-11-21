@@ -2,14 +2,14 @@ package jaf.kapitel7.pp79;
 
 import java.text.NumberFormat;
 
-public class AccountLocable {
+public class AccountLockable {
   private final long acctNumber;
   private double balance;
   private final String name;
   private int key;
   private boolean locked;
 
-  public AccountLocable(String owner, long accountNumber, double initial) {
+  public AccountLockable(String owner, long accountNumber, double initial) {
     name = owner;
     acctNumber = accountNumber;
     balance = initial;
@@ -37,11 +37,14 @@ public class AccountLocable {
     return locked;
   }
 
+
   public void deposit(double amount) {
     if (!locked) {
-      if (amount < 0) System.out.println("The amount of deposit can not be negative");
+      if (amount < 0) System.out.println("The amount of deposit can not be negative \n");
 
       balance = balance + amount;
+    } else{
+      System.out.println("Sorry the System is locked.\n");
     }
   }
 
@@ -49,11 +52,11 @@ public class AccountLocable {
     if (!locked) {
       balance = balance - amount - fee;
       if (balance < 0) {
-        System.out.println("Sorry, " + this.name + " your balance is to small for this withdraw");
+        System.out.println("Sorry, " + this.name + " your balance is to small for this withdraw\n");
         balance = balance + amount + fee;
       }
     } else {
-      System.out.println("Sorry the System is locked");
+      System.out.println("Sorry the System is locked.\n");
     }
   }
 
@@ -61,8 +64,8 @@ public class AccountLocable {
     if (locked) {
       System.out.println("Sorry the Account is locked.");
     } else {
-      double RATE = 0.035;
-      balance += (balance * RATE);
+      double rate = 0.035;
+      balance += (balance * rate);
     }
   }
 
@@ -73,6 +76,7 @@ public class AccountLocable {
       return balance;
     }
   }
+
 
   public String toString() {
     if (!locked) {

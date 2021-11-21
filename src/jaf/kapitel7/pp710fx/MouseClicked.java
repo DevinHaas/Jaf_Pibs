@@ -26,6 +26,7 @@ public class MouseClicked extends Application {
 
     Scene scene = new Scene(root, 500, 500, Color.LIGHTBLUE);
 
+    //set an event listener for a mouse click
     scene.setOnMouseClicked(this::processMouseClick);
 
     primaryStage.setTitle("The indestructible mouse click");
@@ -34,6 +35,7 @@ public class MouseClicked extends Application {
   }
 
   private void processMouseClick(javafx.scene.input.MouseEvent mouseEvent) {
+    //increase a counter and show it in the text area
     counter++;
     clicked.setText("Mouse clicked: " + counter);
   }
