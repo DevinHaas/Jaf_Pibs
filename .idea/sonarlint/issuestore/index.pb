@@ -21,12 +21,8 @@ R
 "src/jaf/kapitel7/pp71/Balance.java,e\9\e98cccc8ba42044882ac1b8fc767748d5a2138a5
 L
 src/jaf/kapitel6/pp67/C.java,f\5\f519b9efaa64eb5e87dad573a28d031744b9252e
-O
-src/jaf/kapitel5/pp56/Coin.java,a\a\aa75bc01bbd94911283bd3f70be6221cff948ebb
 U
 %src/jaf/kapitel7/pp74/Comparable.java,7\f\7f5102b9d51c0ad33a01b1a78918e1c29ab89281
-U
-%src/jaf/kapitel7/pp76/Complexity.java,3\1\316ece4504c25fb8a673aaa9d7065c3bd23fb645
 L
 src/jaf/kapitel6/pp67/D.java,5\1\51f39501e6b9e3b90c379fa5e22c391400c414ed
 T
@@ -57,10 +53,6 @@ R
 "src/jaf/kapitel7/pp714fx/Tank.java,d\b\dbd759556688164a735b28238ec0cdaf4acca865
 Z
 *src/jaf/kapitel7/pp79/AccountLockable.java,8\7\876e8dcb5947987f527f1b7c23e9ec301d45bc13
-Z
-*src/jaf/kapitel7/pp712fx/CreatCircles.java,3\9\39762a30647af12ea0eaa732d671584b7e927cc4
-R
-"src/jaf/kapitel8/CreatCircles.java,5\1\519b9a2c1bb09cccd156086812b0954cf378bea8
 Z
 *src/jaf/kapitel7/pp710fx/MouseClicked.java,7\8\785f0f13ff4c026bc7c7f890780096f331d03fbe
 ]
@@ -99,3 +91,9 @@ M
 src/jaf/kapitel3/PP310FX.java,7\e\7eb0fecc9f8e1f6b3201d3073abed041f55a6fd3
 Q
 !src/jaf/kapitel5/pp514/pp514.java,6\0\6029c452c8aaf481fc56465cebba3b64db8c2a80
+S
+#src/jaf/kapitel8/pp83/Numbers83.txt,d\8\d8e4495d7aec18eab8056864753cef7f0b009f33
+O
+src/jaf/kapitel8/pp83/PP83.java,d\7\d7b0d979cf9960e78404ed88472d727f4ad5b610
+O
+src/jaf/kapitel5/pp56/Coin.java,a\a\aa75bc01bbd94911283bd3f70be6221cff948ebb

@@ -21,7 +21,7 @@ public class CreatCircles extends Application {
   @Override
   public void start(Stage primaryStage){
     Group root = new Group();
-    for (int i = 0; i <= 1; i++) {
+    for (int i = 0; i <= 19; i++) {
       circles[i] = new Circle(ran.nextInt(1000), ran.nextInt(800), ran.nextInt(200));
 
 
