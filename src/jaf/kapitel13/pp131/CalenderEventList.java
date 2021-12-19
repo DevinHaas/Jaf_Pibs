@@ -1,4 +1,6 @@
-package jaf.kapitel13b.pp131;
+package jaf.kapitel13.pp131;
+
+//This version was inspired by Lewis Loftus Software Solutions Ninth Edition Page 606
 
 public class CalenderEventList {
 
@@ -34,10 +36,10 @@ public class CalenderEventList {
     return result.toString();
   }
 
-  private class CalenderEventNode {
+  private static class CalenderEventNode {
 
-    public CalendarEvent event;
-    public CalenderEventNode next;
+    private final CalendarEvent event;
+    private CalenderEventNode next;
 
     public CalenderEventNode(CalendarEvent calendarEvent) {
       event = calendarEvent;

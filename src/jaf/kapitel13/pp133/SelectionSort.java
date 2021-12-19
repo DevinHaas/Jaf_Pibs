@@ -1,4 +1,4 @@
-package jaf.kapitel13b.pp133;
+package jaf.kapitel13.pp133;
 
 public class SelectionSort {
 
@@ -11,7 +11,7 @@ public class SelectionSort {
 
     public void add(int value){
         SortNode node = new SortNode(value);
-        SortNode current = null;
+        SortNode current;
 
         if (list == null){
             list = node;
